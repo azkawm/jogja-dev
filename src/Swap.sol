@@ -1,7 +1,7 @@
 pragma solidity ^0.8.0;
 
-import {ERC20} from "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
-interface ISwapRouter is IUniswapV3SwapCallback {
+import {IERC20} from "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
+interface ISwapRouter {
     struct ExactInputSingleParams {
         address tokenIn;
         address tokenOut;

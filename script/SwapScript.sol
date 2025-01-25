@@ -8,8 +8,6 @@ contract SwapScript is Script {
     Swap public swap;
 
     function setUp() public {
-        vm.createSelectFork();
-          swap = new Swap();
     }
 
     function run() public {
