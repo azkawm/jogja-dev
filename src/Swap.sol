@@ -36,6 +36,7 @@ contract Swap {
                 sqrtPriceLimitX96: 0
             });
 
+       IERC20(usdc).approve(router, amountIn); // approve kepada Uniswap
         ISwapRouter(router).exactInputSingle(params);
   
   }
